@@ -54,7 +54,7 @@ El siguiente archivo Vagrantfile cuenta con las provisiones necesarias para llev
 
 1. Defimos un directorio para crear proyectos de Vagrant. En mi caso utilice `Documentos/laboratorios/ansible-install`
 
-2. Dentro del directorio `Documentos/laboratorios/ansible-install`, copie el archivo `Vagrantfile` que se encuentra disponible en el [repositorio](infraestructura/Vagrantfile)
+2. Dentro del directorio `Documentos/laboratorios/ansible-install`, copie el archivo `Vagrantfile` que se encuentra disponible en el [repositorio](install-ansible/infraestructura/Vagrantfile)
 
 3. Iniciamos el CLI de Windows PowerShell y nos dirigimos a nuestro directorio en donde esta alojado el archivo Vagrantfile `cd Documentos/laboratorios/ansible-install`
 
