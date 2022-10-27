@@ -1,1 +1,45 @@
+#Imagen de vagrant para laboratorios de ansible
 
+Vagrant.configure("2") do |config|
+    config.vm.box = "generic/centos9s"
+    config.vm.box_version = "4.1.16"
+    config.vm.box_check_update=false
+
+    config.vm.provider "virtualbox" do |vb|
+        vb.gui = false
+        vb.memory = "2048" # aqui se define la memoria que tomara cada vm
+     end
+
+    config.vm.provision "file", source: "ansible-vagrant.pub", destination: "/home/vagrant/ansible-vagrant.pub"
+    config.vm.provision "shell", inline: <<-SHELL
+       sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+       systemctl restart sshd
+       cat /home/vagrant/ansible-vagrant.pub >> /home/vagrant/.ssh/authorized_keys
+    SHELL
+
+    config.vm.define "master" do |master|
+        master.vm.hostname= "master"
+        master.vm.network "private_network", ip: "192.168.33.25"
+        master.vm.provider "virtualbox" do |vb|
+         vb.memory="2048" #Definimos 3 GB para ansible
+        end
+    end
+    ##Definimos los servidores de lab
+    config.vm.define "server1" do |server1|
+        server1.vm.hostname="server1"
+        server1.vm.network "private_network", ip: "192.168.33.26"
+        
+    end
+    config.vm.define "server2" do |server2|
+        server2.vm.hostname="server2"
+        server2.vm.network "private_network", ip: "192.168.33.27"
+    end
+    config.vm.define "server3" do |server3|
+        server3.vm.hostname="server3"
+        server3.vm.network "private_network", ip: "192.168.33.28"
+    end
+    config.vm.define "server4" do |server4|
+        server4.vm.hostname="server4"
+        server4.vm.network "private_network", ip: "192.168.33.29"
+    end
+end
