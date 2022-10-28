@@ -1,8 +1,8 @@
-# Configuracion Inicial
+# Configuración Inicial
 
-En este documento encontrara lo necesario para llevar a cabo este laboratorio
+En este documento encontrará lo necesario para llevar a cabo este laboratorio
 
-> ##### Se instalara virtualbox y Vagrant para llevar a cabo esta practica, crearemos maquinas virtuales personalizadas utilizando el fichero _vagrantfile_
+> ##### Se instalará virtualbox y Vagrant para llevar a cabo esta practica, crearemos maquinas virtuales personalizadas utilizando el fichero _vagrantfile_
 
  El siguiente manual esta basado en los recursos de mi computador personal
 
@@ -23,7 +23,7 @@ Puntos necesarios para instalar el entorno de este laboratorio
 <a name="install-vb"></a>
 ### Instalación de VirtualBox
 
-VirtualBox es una aplicacion que sirve para virtualizar SO en un ambiente controlado, podemos virtualizar varios sistemas o uno en especifico el cual seria nuestro ambiente de trabajo. En este caso lo vamos a utilizar para instalar in ambiente asilado de nuestro sistema operativo principal.
+VirtualBox es una aplicación que sirve para virtualizar SO en un ambiente controlado, podemos virtualizar varios sistemas o uno en específico el cual seria nuestro ambiente de trabajo. En este caso lo vamos a utilizar para instalar in ambiente aislado de nuestro sistema operativo principal.
 
 1. Descargar e Instalar la última versión estable de **VirtualBox** para Windows [aqui](https://download.virtualbox.org/virtualbox/6.1.40/VirtualBox-6.1.40-154048-Win.exe)
 
@@ -31,13 +31,13 @@ VirtualBox es una aplicacion que sirve para virtualizar SO en un ambiente contro
 
 # Instalacion de Vagrant
 
-Vagrant es una herramienta o aplicación de líneas de comando utilizada en el sector IT, especialmente por desarrolladores. Permite la creación de entornos de desarrollo virtualizados que pueden ser reproducidos y compartidos de una forma muy fácil.
+Vagrant es una herramienta o aplicación de línea de comando utilizada en el sector IT, especialmente por desarrolladores. Permite la creación de entornos de desarrollo virtualizados que pueden ser reproducidos y compartidos de una forma muy fácil.
 
 1. Descargar e Instalar la última versión estable de **Vagrant** para Windows [aqui](https://releases.hashicorp.com/vagrant/2.3.2/vagrant_2.3.2_windows_i686.msi)
 
 > Una vez descargado el programa procedemos a instalarlo con las configuraciones por defecto
 
-2. Una vez terminada la instalacion nos solicitara reinicar nuestro equipo para que el PowerShell de windows pueda reconocer vagrant
+2. Una vez terminada la instalación nos solicitará reinicar nuestro equipo para que el PowerShell de windows pueda reconocer vagrant
 
 3. Procedemos a abrir la linea de comandos "CLI" Powershell. Verificamos si el CLI powerShell detecta los comandos de vagrant
 `vagrant`
@@ -52,15 +52,15 @@ Utilizamos vagrantfile para crear nuestras maquinas virtuales personalizadas, si
 
 El siguiente archivo Vagrantfile cuenta con las provisiones necesarias para llevar acabo nuestro laboratorio. Siga los siguentes pasos para crear su poyecto de vagrant personalizado.
 
-1. Defimos un directorio para crear proyectos de Vagrant. En mi caso utilice `Documentos/laboratorios/ansible-install`
+1. Definimos un directorio para crear proyectos de Vagrant. En mi caso utilice `Documentos/laboratorios/ansible-install`.
 
-2. Dentro del directorio `Documentos/laboratorios/ansible-install`, copie el archivo `Vagrantfile` que se encuentra disponible en el [repositorio](https://github.com/carloscubilla/install-ansible/blob/main/infraestructura/Vagrantfile)
+2. Dentro del directorio `Documentos/laboratorios/ansible-install`, copie el archivo `Vagrantfile` que se encuentra disponible en el [repositorio](https://github.com/carloscubilla/install-ansible/blob/main/infraestructura/Vagrantfile).
 
-3. Iniciamos el CLI de Windows PowerShell y nos dirigimos a nuestro directorio en donde esta alojado el archivo Vagrantfile `cd Documentos/laboratorios/ansible-install`
+3. Iniciamos el CLI de Windows PowerShell y nos dirigimos a nuestro directorio en donde esta alojado el archivo Vagrantfile `cd Documentos/laboratorios/ansible-install`.
 
 4. Una vez ubicados en el directorio correspondiente  iniciamos nuestra maquina personalizada con el siguiente comando:
 
 ```powershell
 vagrant up
 ```
-> Esto se estaria demorando dependiendo de los recursos de nuestro computador y la velocidad de nuestra conexion a internet
+> Esto se estaria demorando dependiendo de los recursos de nuestro computador y la velocidad de nuestra conexión a internet.
