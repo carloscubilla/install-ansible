@@ -65,4 +65,4 @@ vagrant up
 ```
 > Esto se estaria demorando dependiendo de los recursos de nuestro computador y la velocidad de nuestra conexión a internet.
 
-Culminado este proceso nos dirigimos a mi perfil de Medium para contunuar nuestro laboratorio [aqui](https://medium.com/@cubillacar97/ansible-instalaci%C3%B3n-b43ee8bfedd8)
+Culminado este proceso nos dirigimos a mi perfil de Medium para continuar nuestro laboratorio [aqui](https://medium.com/@cubillacar97/ansible-instalaci%C3%B3n-b43ee8bfedd8)
